@@ -7,7 +7,7 @@ resource "google_compute_firewall" "rules" {
     protocol  = "tcp"
     ports     = ["80", "8080", "1000-2000","22"]
   }
-  source_tags = ["subnet1"]
-  target_tags = ["subnet2"]
+  source_tags = ["dev-public-subnet1"]
+  target_tags = ["dev-private-subnet-1"]
 
 }
