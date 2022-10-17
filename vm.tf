@@ -7,7 +7,7 @@ provider "google" {
 
 resource "google_compute_instance" "default" {
   allow_stopping_for_update = "true"
-  name         = "arun"
+  name         = "dev-jenkins"
   machine_type = "e2-small"
   zone         = "asia-south1-c"
 
@@ -20,8 +20,8 @@ resource "google_compute_instance" "default" {
   }
 
   network_interface {
-    network = "terraform-vpc"
-    subnetwork = "subnet1"
+    network = "dev-vpc"
+    subnetwork = "dev-public-subnet-1"
 
 
     access_config {
