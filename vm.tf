@@ -1,9 +1,3 @@
-provider "google" {
-  credentials = "${file("robust-form-362412-74d8b1e1b512.json")}"
-  project     = "robust-form-362412"
-  region      = "asia-south1"
-  zone        = "asia-south1-c"
-}
 
 resource "google_compute_instance" "default" {
   allow_stopping_for_update = "true"
