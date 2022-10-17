@@ -5,7 +5,7 @@ provider "google" {
   zone        = "asia-south1-c"
 }
 resource "google_compute_network" "vpc_network" {
-name = "terraform-vpc"
+name = "dev-vpc"
 auto_create_subnetworks = "false"
 }
 resource "google_compute_subnetwork" "public-subnetwork" {
