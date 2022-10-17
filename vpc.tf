@@ -24,7 +24,7 @@ secondary_ip_range {
 
 
 }
-resource "google_compute_subnetwork" "private-subnetwork" {
+resource "google_compute_subnetwork" "private-subnetwork-1" {
 name = "dev-private-subnet1"
 private_ip_google_access = "true"
 ip_cidr_range = "10.3.0.0/16"
@@ -35,7 +35,7 @@ secondary_ip_range {
     ip_cidr_range = "10.0.22.0/24"
   }
 }
-resource "google_compute_subnetwork" "private-subnetwork" {
+resource "google_compute_subnetwork" "private-subnetwork-2" {
 name = "dev-private-subnet2"
 private_ip_google_access = "true"
 ip_cidr_range = "10.4.0.0/16"
